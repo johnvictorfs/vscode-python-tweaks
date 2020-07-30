@@ -1,0 +1,63 @@
+{
+  "name": "python-tweaks",
+  "displayName": "Python Tweaks",
+  "description": "Small editor Tweaks for easier development with Python",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.47.0"
+  },
+  "license": "MIT",
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:python-tweaks.change-to-fstring"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "python-tweaks.convert-to-fstring",
+        "title": "Python Tweaks: Convert to F-String"
+      }
+    ],
+    "completionProvider": {
+      "resolveProvider": "true",
+      "triggerCharacters": [
+        "\"",
+        "'"
+      ]
+    },
+    "configuration": {
+      "title": "Python Tweaks",
+      "properties": {
+        "python-tweaks.autoCompleteFStringExtension": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically converts a string to f-string when you use curly braces inside one."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "lint": "eslint src --ext ts",
+    "watch": "tsc -watch -p ./",
+    "pretest": "yarn run compile && yarn run lint",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.47.0",
+    "@types/glob": "^7.1.1",
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^13.11.0",
+    "eslint": "^6.8.0",
+    "@typescript-eslint/parser": "^2.30.0",
+    "@typescript-eslint/eslint-plugin": "^2.30.0",
+    "glob": "^7.1.6",
+    "mocha": "^7.1.2",
+    "typescript": "^3.8.3",
+    "vscode-test": "^1.3.0"
+  }
+}
