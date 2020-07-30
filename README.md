@@ -6,7 +6,7 @@
 
 #### Commands
 
-- `python-tweaks.convert-to-fstring`: Convert regular Python string to f-string
+- `python-tweaks.convert-to-fstring`: Convert all selected regular Python strings to f-string
 
 ---
 
@@ -20,12 +20,4 @@
 
 ## Settings
 
-* `python-tweaks.autoCompleteFString`: Enable/Disable automatically converting strings to f-string when curly braces are used inside one
-
----
-
-## Release Notes
-
-### 0.0.1
-
-- Initial release (alpha)
+- `python-tweaks.autoCompleteFString`: Enable/Disable automatically converting strings to f-string when curly braces are used inside one
