@@ -14,13 +14,13 @@
 
 #### Events
 
-- Automatically convert strings to f-strings if any curly braces are added to a regular string (toggleable)
+- Automatically convert strings to f-strings if any curly braces are used in a regular string (toggleable)
 
 ---
 
 ## Settings
 
-* `python-tweaks.autoCompleteFStringExtension`: Enable/Disable automatically converting strings to f-string when you use curly braces inside one.
+* `python-tweaks.autoCompleteFString`: Enable/Disable automatically converting strings to f-string when curly braces are used inside one
 
 ---
 

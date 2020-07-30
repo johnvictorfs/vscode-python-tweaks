@@ -11,7 +11,7 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:python-tweaks.change-to-fstring"
+    "onCommand:python-tweaks.convert-to-fstring"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -21,20 +21,13 @@
         "title": "Python Tweaks: Convert to F-String"
       }
     ],
-    "completionProvider": {
-      "resolveProvider": "true",
-      "triggerCharacters": [
-        "\"",
-        "'"
-      ]
-    },
     "configuration": {
       "title": "Python Tweaks",
       "properties": {
-        "python-tweaks.autoCompleteFStringExtension": {
+        "python-tweaks.autoCompleteFString": {
           "type": "boolean",
           "default": true,
-          "description": "Automatically converts a string to f-string when you use curly braces inside one."
+          "description": "Automatically converts strings to f-string when curly braces are used inside one"
         }
       }
     }
