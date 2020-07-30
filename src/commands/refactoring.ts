@@ -20,7 +20,8 @@ export function convertToFString() {
 
       const replaced = word.replace(pattern, 'f$2$3$4')
 
-      if (word !== replaced) {
+      if (word === replaced) {
+        // Nothing was changed
         vscode.window.showErrorMessage('No valid strings selected to convert')
 
         return
