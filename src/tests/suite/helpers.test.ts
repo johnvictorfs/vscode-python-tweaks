@@ -2,7 +2,7 @@ import * as assert from 'assert'
 
 import { isString, isFString, countCharacters } from '../../helpers'
 
-suite('Helper Functions Test Suite', () => {
+suite('Helper Strings Functions Test Suite', () => {
   test('Test countCharacters', () => {
     assert.equal(countCharacters('l', 'hello world'), 3)
     assert.equal(countCharacters('h', 'hello world'), 1)

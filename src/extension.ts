@@ -1,6 +1,6 @@
 import * as vscode from 'vscode'
 
-import { convertToFString } from './commands'
+import { convertToFString } from './commands/refactoring'
 
 export function activate(context: vscode.ExtensionContext) {
   console.log('Extension "python-tweaks" (Python Tweaks) is now active.')
